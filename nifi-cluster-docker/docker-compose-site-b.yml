@@ -34,6 +34,7 @@ services:
          target: /var/files
     extra_hosts:
        - "hadoop.demo:${HADOOP_ADDR}"
+       - "kafka.demo:${HADOOP_ADDR}"
        - "nifi.demo:${DOCKER_HOSTADDR}"
 
   nifi-node-2:
@@ -58,6 +59,7 @@ services:
          target: /var/files
     extra_hosts:
        - "hadoop.demo:${HADOOP_ADDR}"
+       - "kafka.demo:${HADOOP_ADDR}"
        - "nifi.demo:${DOCKER_HOSTADDR}"
 
   lb:
