@@ -76,6 +76,9 @@ A root folder on HDFS should be setup for NIFI:
     mkdir -p nifi-data/a/files/scenario3/landing
     mkdir -p nifi-data/a/files/scenario4/landing
     mkdir -p nifi-data/a/files/scenario5/landing
+    mkdir -p nifi-data/a/files/scenario6/landing
+    mkdir -p nifi-data/a/files/scenario7/landing
+    mkdir -p nifi-data/a/files/scenario8/landing
 
     chown -R hadoop:docker nifi-data
 
@@ -151,6 +154,19 @@ Expected result:
 - File written to: hdfs : /user/nifi/scenario6/out
 - File written to: hdfs : /user/nifi/receiver
 
+### Scenario 7 (Output Port)
+
+Schedule for calling: www.google.com with a filename: google_thurs.html.
+
+Expected result:
+- File written to: /var/files/receive
+
+### Scenario 8 (Funnel)
+
+Place a file in /var/files/scenario8/landing1 and /var/files/scenario8/landing2.
+
+Expected result:
+- Two files written to: /var/files/scenario8/out
 
 # Debugging
 
