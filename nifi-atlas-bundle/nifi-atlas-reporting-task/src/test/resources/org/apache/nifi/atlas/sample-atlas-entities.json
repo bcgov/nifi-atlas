@@ -1,0 +1,117 @@
+{
+  "flowName" : "NiFi Flow",
+  "rootProcessGroupId" : "938901c7-015e-1000-f9d3-77491929dca6",
+  "url" : "http://localhost:8080",
+  "id" : {
+    "typeName" : "nifi_flow",
+    "uniqueAttributes" : {
+      "qualifiedName" : "938901c7-015e-1000-f9d3-77491929dca6"
+    }
+  },
+  "description" : null,
+  "flowPaths" : [ {
+    "processorIds" : [ "d36bcd7a-015e-1000-d346-33d33d9ac87a", "d36d1d34-015e-1000-b55d-c96261e37267" ],
+    "id" : "d36bcd7a-015e-1000-d346-33d33d9ac87a",
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "incomingPaths" : [ ],
+    "outgoingPaths" : [ ],
+    "name" : null
+  }, {
+    "processorIds" : [ "93c65ee3-015e-1000-f7c1-b1b6c1f71ef3" ],
+    "id" : "93c65ee3-015e-1000-f7c1-b1b6c1f71ef3",
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "incomingPaths" : [ ],
+    "outgoingPaths" : [ ],
+    "name" : null
+  } ],
+  "processors" : {
+    "d36bcd7a-015e-1000-d346-33d33d9ac87a" : {
+      "id" : "d36bcd7a-015e-1000-d346-33d33d9ac87a",
+      "groupId" : "d36b8882-015e-1000-953a-a8756e47f3c8",
+      "name" : "ListFile",
+      "type" : "ListFile",
+      "runStatus" : "Running",
+      "inputCount" : 0,
+      "inputBytes" : 0,
+      "outputCount" : 0,
+      "outputBytes" : 0,
+      "bytesRead" : 0,
+      "bytesWritten" : 0,
+      "invocations" : 1,
+      "processingNanos" : 179487776,
+      "flowFilesRemoved" : 0,
+      "averageLineageDuration" : 0,
+      "activeThreadCount" : 0,
+      "flowFilesReceived" : 0,
+      "bytesReceived" : 0,
+      "flowFilesSent" : 0,
+      "bytesSent" : 0,
+      "counters" : {
+      }
+    },
+    "d36d1d34-015e-1000-b55d-c96261e37267" : {
+      "id" : "d36d1d34-015e-1000-b55d-c96261e37267",
+      "groupId" : "d36b8882-015e-1000-953a-a8756e47f3c8",
+      "name" : "PutFile",
+      "type" : "PutFile",
+      "runStatus" : "Running",
+      "inputCount" : 0,
+      "inputBytes" : 0,
+      "outputCount" : 0,
+      "outputBytes" : 0,
+      "bytesRead" : 0,
+      "bytesWritten" : 0,
+      "invocations" : 0,
+      "processingNanos" : 0,
+      "flowFilesRemoved" : 0,
+      "averageLineageDuration" : 0,
+      "activeThreadCount" : 0,
+      "flowFilesReceived" : 0,
+      "bytesReceived" : 0,
+      "flowFilesSent" : 0,
+      "bytesSent" : 0,
+      "counters" : null
+    },
+    "93c65ee3-015e-1000-f7c1-b1b6c1f71ef3" : {
+      "id" : "93c65ee3-015e-1000-f7c1-b1b6c1f71ef3",
+      "groupId" : "938901c7-015e-1000-f9d3-77491929dca6",
+      "name" : "PutFile",
+      "type" : "PutFile",
+      "runStatus" : "Disabled",
+      "inputCount" : 0,
+      "inputBytes" : 0,
+      "outputCount" : 0,
+      "outputBytes" : 0,
+      "bytesRead" : 0,
+      "bytesWritten" : 0,
+      "invocations" : 0,
+      "processingNanos" : 0,
+      "flowFilesRemoved" : 0,
+      "averageLineageDuration" : 0,
+      "activeThreadCount" : 0,
+      "flowFilesReceived" : 0,
+      "bytesReceived" : 0,
+      "flowFilesSent" : 0,
+      "bytesSent" : 0,
+      "counters" : null
+    }
+  },
+  "createdData" : {
+  },
+  "queues" : {
+  },
+  "inputPorts" : {
+  },
+  "outputPorts" : {
+  },
+  "rootInputPorts" : {
+  },
+  "rootOutputPorts" : {
+  },
+  "rootInputPortEntities" : {
+  },
+  "rootOutputPortEntities" : {
+  }
+}

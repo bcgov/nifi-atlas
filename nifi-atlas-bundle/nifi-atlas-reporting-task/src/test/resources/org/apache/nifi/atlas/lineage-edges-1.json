@@ -1,0 +1,81 @@
+[ {
+  "uuid" : "691da351-ab09-4d98-ab76-72d1e4ecc638",
+  "source" : {
+    "eventIdentifier" : 307,
+    "identifier" : "307",
+    "timestamp" : 1507770076578,
+    "nodeType" : "PROVENANCE_EVENT_NODE",
+    "flowFileUuid" : "691da351-ab09-4d98-ab76-72d1e4ecc638",
+    "eventType" : "RECEIVE",
+    "childUuids" : [ ],
+    "parentUuids" : [ ]
+  },
+  "destination" : {
+    "flowFileUuid" : "691da351-ab09-4d98-ab76-72d1e4ecc638",
+    "identifier" : "691da351-ab09-4d98-ab76-72d1e4ecc638",
+    "timestamp" : 1507770076578,
+    "nodeType" : "FLOWFILE_NODE"
+  }
+}, {
+  "uuid" : "691da351-ab09-4d98-ab76-72d1e4ecc638",
+  "source" : {
+    "eventIdentifier" : 309,
+    "identifier" : "309",
+    "timestamp" : 1507770076616,
+    "nodeType" : "PROVENANCE_EVENT_NODE",
+    "flowFileUuid" : "691da351-ab09-4d98-ab76-72d1e4ecc638",
+    "eventType" : "CLONE",
+    "childUuids" : [ "52260083-603e-41d8-82ae-7f65650ff1f1" ],
+    "parentUuids" : [ "691da351-ab09-4d98-ab76-72d1e4ecc638" ]
+  },
+  "destination" : {
+    "eventIdentifier" : 311,
+    "identifier" : "311",
+    "timestamp" : 1507770076616,
+    "nodeType" : "PROVENANCE_EVENT_NODE",
+    "flowFileUuid" : "691da351-ab09-4d98-ab76-72d1e4ecc638",
+    "eventType" : "DROP",
+    "childUuids" : [ ],
+    "parentUuids" : [ ]
+  }
+}, {
+  "uuid" : "691da351-ab09-4d98-ab76-72d1e4ecc638",
+  "source" : {
+    "eventIdentifier" : 308,
+    "identifier" : "308",
+    "timestamp" : 1507770076599,
+    "nodeType" : "PROVENANCE_EVENT_NODE",
+    "flowFileUuid" : "691da351-ab09-4d98-ab76-72d1e4ecc638",
+    "eventType" : "ATTRIBUTES_MODIFIED",
+    "childUuids" : [ ],
+    "parentUuids" : [ ]
+  },
+  "destination" : {
+    "eventIdentifier" : 309,
+    "identifier" : "309",
+    "timestamp" : 1507770076616,
+    "nodeType" : "PROVENANCE_EVENT_NODE",
+    "flowFileUuid" : "691da351-ab09-4d98-ab76-72d1e4ecc638",
+    "eventType" : "CLONE",
+    "childUuids" : [ "52260083-603e-41d8-82ae-7f65650ff1f1" ],
+    "parentUuids" : [ "691da351-ab09-4d98-ab76-72d1e4ecc638" ]
+  }
+}, {
+  "uuid" : "691da351-ab09-4d98-ab76-72d1e4ecc638",
+  "source" : {
+    "flowFileUuid" : "691da351-ab09-4d98-ab76-72d1e4ecc638",
+    "identifier" : "691da351-ab09-4d98-ab76-72d1e4ecc638",
+    "timestamp" : 1507770076578,
+    "nodeType" : "FLOWFILE_NODE"
+  },
+  "destination" : {
+    "eventIdentifier" : 308,
+    "identifier" : "308",
+    "timestamp" : 1507770076599,
+    "nodeType" : "PROVENANCE_EVENT_NODE",
+    "flowFileUuid" : "691da351-ab09-4d98-ab76-72d1e4ecc638",
+    "eventType" : "ATTRIBUTES_MODIFIED",
+    "childUuids" : [ ],
+    "parentUuids" : [ ]
+  }
+} ]

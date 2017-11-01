@@ -1,0 +1,202 @@
+{
+  "enumDefs" : [ ],
+  "structDefs" : [ ],
+  "classificationDefs" : [ ],
+  "entityDefs" : [ {
+    "category" : "ENTITY",
+    "guid" : "0960047a-ca3e-4f3a-b5d8-95c2166dee21",
+    "createdBy" : "admin",
+    "updatedBy" : "admin",
+    "createTime" : 1506479516255,
+    "updateTime" : 1506522441116,
+    "version" : 2,
+    "name" : "nifi_output_port",
+    "description" : "nifi_output_port",
+    "typeVersion" : "1.0",
+    "attributeDefs" : [ ],
+    "superTypes" : [ "nifi_component", "DataSet" ]
+  }, {
+    "category" : "ENTITY",
+    "guid" : "85475376-aad6-47a6-9b8a-05e04c076dcb",
+    "createdBy" : "admin",
+    "updatedBy" : "admin",
+    "createTime" : 1506479516263,
+    "updateTime" : 1506522441140,
+    "version" : 2,
+    "name" : "nifi_queue",
+    "description" : "nifi_queue",
+    "typeVersion" : "1.0",
+    "attributeDefs" : [ ],
+    "superTypes" : [ "nifi_component", "DataSet" ]
+  }, {
+    "category" : "ENTITY",
+    "guid" : "4b33ae76-85c1-4a56-9e10-9ec00d480690",
+    "createdBy" : "admin",
+    "updatedBy" : "admin",
+    "createTime" : 1506479516269,
+    "updateTime" : 1506522441151,
+    "version" : 2,
+    "name" : "nifi_flow_path",
+    "description" : "nifi_flow_path",
+    "typeVersion" : "1.0",
+    "attributeDefs" : [ {
+      "name" : "url",
+      "typeName" : "string",
+      "isOptional" : false,
+      "cardinality" : "SINGLE",
+      "valuesMinCount" : 1,
+      "valuesMaxCount" : 1,
+      "isUnique" : false,
+      "isIndexable" : false
+    }, {
+      "name" : "incomingFlowPaths",
+      "typeName" : "array<nifi_flow_path>",
+      "isOptional" : true,
+      "cardinality" : "SINGLE",
+      "valuesMinCount" : 0,
+      "valuesMaxCount" : 1,
+      "isUnique" : false,
+      "isIndexable" : false
+    }, {
+      "name" : "outgoingFlowPaths",
+      "typeName" : "array<nifi_flow_path>",
+      "isOptional" : true,
+      "cardinality" : "SINGLE",
+      "valuesMinCount" : 0,
+      "valuesMaxCount" : 1,
+      "isUnique" : false,
+      "isIndexable" : false
+    } ],
+    "superTypes" : [ "nifi_component", "Process" ]
+  }, {
+    "category" : "ENTITY",
+    "guid" : "3e840b85-63ad-43ee-84ed-ea5e446d2ab9",
+    "createdBy" : "admin",
+    "updatedBy" : "admin",
+    "createTime" : 1506479516283,
+    "updateTime" : 1506522441179,
+    "version" : 2,
+    "name" : "nifi_component",
+    "description" : "nifi_component",
+    "typeVersion" : "1.0",
+    "attributeDefs" : [ {
+      "name" : "nifiFlow",
+      "typeName" : "nifi_flow",
+      "isOptional" : true,
+      "cardinality" : "SINGLE",
+      "valuesMinCount" : 0,
+      "valuesMaxCount" : 1,
+      "isUnique" : false,
+      "isIndexable" : false
+    } ],
+    "superTypes" : [ ]
+  }, {
+    "category" : "ENTITY",
+    "guid" : "cd0e3e50-9cfb-40bd-bbe0-ae5809b15b52",
+    "createdBy" : "admin",
+    "updatedBy" : "admin",
+    "createTime" : 1506479516295,
+    "updateTime" : 1506522441194,
+    "version" : 2,
+    "name" : "nifi_input_port",
+    "description" : "nifi_input_port",
+    "typeVersion" : "1.0",
+    "attributeDefs" : [ ],
+    "superTypes" : [ "nifi_component", "DataSet" ]
+  }, {
+    "category" : "ENTITY",
+    "guid" : "51431c6d-c8ae-4a24-9187-37ac8b0ccac4",
+    "createdBy" : "admin",
+    "updatedBy" : "admin",
+    "createTime" : 1506479516299,
+    "updateTime" : 1506522441201,
+    "version" : 2,
+    "name" : "nifi_flow",
+    "description" : "nifi_flow",
+    "typeVersion" : "1.0",
+    "attributeDefs" : [ {
+      "name" : "url",
+      "typeName" : "string",
+      "isOptional" : false,
+      "cardinality" : "SINGLE",
+      "valuesMinCount" : 1,
+      "valuesMaxCount" : 1,
+      "isUnique" : false,
+      "isIndexable" : false
+    }, {
+      "name" : "flowPaths",
+      "typeName" : "array<nifi_flow_path>",
+      "isOptional" : true,
+      "cardinality" : "SINGLE",
+      "valuesMinCount" : 0,
+      "valuesMaxCount" : 1,
+      "isUnique" : false,
+      "isIndexable" : false,
+      "constraints" : [ {
+        "type" : "ownedRef"
+      } ]
+    }, {
+      "name" : "queues",
+      "typeName" : "array<nifi_queue>",
+      "isOptional" : true,
+      "cardinality" : "SINGLE",
+      "valuesMinCount" : 0,
+      "valuesMaxCount" : 1,
+      "isUnique" : false,
+      "isIndexable" : false,
+      "constraints" : [ {
+        "type" : "ownedRef"
+      } ]
+    }, {
+      "name" : "inputPorts",
+      "typeName" : "array<nifi_input_port>",
+      "isOptional" : true,
+      "cardinality" : "SINGLE",
+      "valuesMinCount" : 0,
+      "valuesMaxCount" : 1,
+      "isUnique" : false,
+      "isIndexable" : false,
+      "constraints" : [ {
+        "type" : "ownedRef"
+      } ]
+    }, {
+      "name" : "outputPorts",
+      "typeName" : "array<nifi_output_port>",
+      "isOptional" : true,
+      "cardinality" : "SINGLE",
+      "valuesMinCount" : 0,
+      "valuesMaxCount" : 1,
+      "isUnique" : false,
+      "isIndexable" : false,
+      "constraints" : [ {
+        "type" : "ownedRef"
+      } ]
+    }, {
+      "name" : "createdByNiFiFlow",
+      "typeName" : "array<nifi_data>",
+      "isOptional" : true,
+      "cardinality" : "SINGLE",
+      "valuesMinCount" : 0,
+      "valuesMaxCount" : 1,
+      "isUnique" : false,
+      "isIndexable" : false,
+      "constraints" : [ {
+        "type" : "ownedRef"
+      } ]
+    } ],
+    "superTypes" : [ "Referenceable", "Asset" ]
+  }, {
+    "category" : "ENTITY",
+    "guid" : "a04b9e51-9264-4d36-858e-40c0ddf564d2",
+    "createdBy" : "admin",
+    "updatedBy" : "admin",
+    "createTime" : 1506479516325,
+    "updateTime" : 1506522441235,
+    "version" : 2,
+    "name" : "nifi_data",
+    "description" : "nifi_data",
+    "typeVersion" : "1.0",
+    "attributeDefs" : [ ],
+    "superTypes" : [ "nifi_component", "DataSet" ]
+  } ]
+}
