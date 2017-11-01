@@ -1,7 +1,7 @@
 FROM apache/nifi:1.4.0
 ADD ./nifi.properties.templ $NIFI_HOME/conf
 ADD ./start-nifi.sh $NIFI_HOME/bin
-ADD ./nifi-atlas-nar-1.4.0-SNAPSHOT.nar $NIFI_HOME/lib
+ADD ./nifi-atlas-nar-1.5.0-SNAPSHOT.nar $NIFI_HOME/lib
 ADD ./nifi-hive-nar-1.4.0-SNAPSHOT.nar $NIFI_HOME/lib
 
 ADD ./hdfs-site.xml $NIFI_HOME/conf
