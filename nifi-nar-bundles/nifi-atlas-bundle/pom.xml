@@ -32,6 +32,10 @@
         <module>nifi-atlas-nar</module>
     </modules>
 
+    <properties>
+
+
+    </properties>
     <dependencyManagement>
         <dependencies>
             <dependency>
