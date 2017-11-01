@@ -1,0 +1,46 @@
+{
+  "cluster" : {
+    "nodes" : [ {
+      "nodeId" : "59209bb2-4a10-4fc4-a45c-f22d93a16e07",
+      "address" : "72e0b7fbaf54",
+      "apiPort" : 8080,
+      "status" : "CONNECTED",
+      "heartbeat" : 1507577303000,
+      "connectionRequested" : null,
+      "roles" : [ "Primary Node", "Cluster Coordinator" ],
+      "activeThreadCount" : 1,
+      "queued" : "0 / 0 bytes",
+      "events" : [ {
+        "timestamp" : 1507576548000,
+        "category" : "INFO",
+        "message" : "Received first heartbeat from connecting node. Node connected."
+      }, {
+        "timestamp" : 1507576543000,
+        "category" : "INFO",
+        "message" : "Connection requested from existing node. Setting status to connecting."
+      } ],
+      "nodeStartTime" : 1507576519000
+    }, {
+      "nodeId" : "213a7ce7-b265-4a02-ad2b-af0a20c0e725",
+      "address" : "f463a8431bac",
+      "apiPort" : 8080,
+      "status" : "CONNECTED",
+      "heartbeat" : 1507577303000,
+      "connectionRequested" : null,
+      "roles" : [ ],
+      "activeThreadCount" : 1,
+      "queued" : "0 / 0 bytes",
+      "events" : [ {
+        "timestamp" : 1507576548000,
+        "category" : "INFO",
+        "message" : "Received first heartbeat from connecting node. Node connected."
+      }, {
+        "timestamp" : 1507576543000,
+        "category" : "INFO",
+        "message" : "Connection requested from existing node. Setting status to connecting."
+      } ],
+      "nodeStartTime" : 1507576520000
+    } ],
+    "generated" : 70104000
+  }
+}

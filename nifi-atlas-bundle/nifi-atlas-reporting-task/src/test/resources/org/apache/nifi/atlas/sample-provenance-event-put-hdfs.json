@@ -1,0 +1,51 @@
+{
+  "eventTime" : 1506976205953,
+  "eventType" : "SEND",
+  "lineageStartDate" : 1506976204573,
+  "componentId" : "dec234ed-015e-1000-cc8e-2b165fff450c",
+  "componentType" : "PutHDFS",
+  "transitUri" : "hdfs://users/aidancope/misc/125234548107944.csv",
+  "sourceSystemFlowFileIdentifier" : null,
+  "parentUuids" : [ ],
+  "alternateIdentifierUri" : null,
+  "details" : null,
+  "relationship" : null,
+  "storageByteOffset" : 6567,
+  "storageFilename" : "661.prov.gz",
+  "eventDuration" : -1,
+  "contentClaimSection" : "1",
+  "contentClaimContainer" : "default",
+  "contentClaimIdentifier" : "1506974669149-1",
+  "contentClaimOffset" : 2116,
+  "sourceQueueIdentifier" : "dec34abf-015e-1000-2ea4-e66536e28bee",
+  "previousAttributes" : {
+    "path" : "./",
+    "mime.type" : "text/csv",
+    "filename" : "125234548107944.csv",
+    "uuid" : "0975d0f6-99ab-4ed7-b053-6aea05bfa66f",
+    "selecthiveql.row.count" : "15"
+  },
+  "updatedAttributes" : {
+    "absolute.hdfs.path" : "/users/aidancope/misc"
+  },
+  "eventId" : 665,
+  "attributes" : {
+    "path" : "./",
+    "mime.type" : "text/csv",
+    "filename" : "125234548107944.csv",
+    "uuid" : "0975d0f6-99ab-4ed7-b053-6aea05bfa66f",
+    "absolute.hdfs.path" : "/users/aidancope/misc",
+    "selecthiveql.row.count" : "15"
+  },
+  "flowFileUuid" : "0975d0f6-99ab-4ed7-b053-6aea05bfa66f",
+  "childUuids" : [ ],
+  "flowFileEntryDate" : 1506976204573,
+  "fileSize" : 172,
+  "previousFileSize" : 172,
+  "previousContentClaimSection" : "1",
+  "previousContentClaimContainer" : "default",
+  "previousContentClaimIdentifier" : "1506974669149-1",
+  "previousContentClaimOffset" : 2116,
+  "bestEventIdentifier" : "665",
+  "remotePortType" : false
+}
