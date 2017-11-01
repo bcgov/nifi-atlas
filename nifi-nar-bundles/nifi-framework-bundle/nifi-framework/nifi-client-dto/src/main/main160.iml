@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/java" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="bundled-dependencies44" level="project" />
+    <orderEntry type="library" name="lib2" level="project" />
+    <orderEntry type="library" name="lib5" level="project" />
+    <orderEntry type="library" name="lib3" level="project" />
+    <orderEntry type="library" name="bundled-dependencies32" level="project" />
+    <orderEntry type="library" name="bundled-dependencies43" level="project" />
+    <orderEntry type="library" name="bundled-dependencies46" level="project" />
+    <orderEntry type="library" name="bundled-dependencies53" level="project" />
+    <orderEntry type="library" name="bundled-dependencies58" level="project" />
+    <orderEntry type="library" name="bundled-dependencies7" level="project" />
+    <orderEntry type="library" name="bundled-dependencies" level="project" />
+    <orderEntry type="library" name="bundled-dependencies29" level="project" />
+  </component>
+</module>
