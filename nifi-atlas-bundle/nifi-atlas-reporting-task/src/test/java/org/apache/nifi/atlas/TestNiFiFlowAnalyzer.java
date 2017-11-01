@@ -351,19 +351,11 @@ public class TestNiFiFlowAnalyzer {
         final NiFiFlowPath pathB = pathMap.get(pr1.getId());
 
         // TODO: This part should be created via lineage.
-        assertEquals(1, pathA.getInputs().size()); // Obscure Ingress
-        // TODO: is this a remote output port?
-        assertEquals(1, pathA.getOutputs().size());
-        final AtlasObjectId output1 = pathA.getOutputs().iterator().next();
-        assertEquals("nifi_output_port", output1.getTypeName());
-        assertEquals(outputPort1.getId(), output1.getUniqueAttributes().get(ATTR_QUALIFIED_NAME));
+        assertEquals(0, pathA.getInputs().size());
+        assertEquals(0, pathA.getOutputs().size());
 
-        assertEquals(1, pathB.getInputs().size());
+        assertEquals(0, pathB.getInputs().size());
         assertEquals(0, pathB.getOutputs().size());
-        final AtlasObjectId input1 = pathB.getInputs().iterator().next();
-        assertEquals("nifi_input_port", input1.getTypeName());
-        assertEquals(inputPort1.getId(), input1.getUniqueAttributes().get(ATTR_QUALIFIED_NAME));
-
     }
 
     private PortStatus createOutputPortStatus(ProcessGroupStatus pg, String name) {
@@ -445,17 +437,11 @@ public class TestNiFiFlowAnalyzer {
         final NiFiFlowPath pathB = pathMap.get(pr1.getId());
 
         // TODO: This part should be done by provenance.
-        assertEquals(1, pathA.getInputs().size()); // Obscure Ingress
-        assertEquals(1, pathA.getOutputs().size());
-        final AtlasObjectId output1 = pathA.getOutputs().iterator().next();
-        assertEquals("nifi_output_port", output1.getTypeName());
-        assertEquals(outputPort1.getId(), output1.getUniqueAttributes().get(ATTR_QUALIFIED_NAME));
+        assertEquals(0, pathA.getInputs().size());
+        assertEquals(0, pathA.getOutputs().size());
 
-        assertEquals(1, pathB.getInputs().size());
+        assertEquals(0, pathB.getInputs().size());
         assertEquals(0, pathB.getOutputs().size());
-        final AtlasObjectId input1 = pathB.getInputs().iterator().next();
-        assertEquals("nifi_input_port", input1.getTypeName());
-        assertEquals(inputPort1.getId(), input1.getUniqueAttributes().get(ATTR_QUALIFIED_NAME));
 
     }
 
