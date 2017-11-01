@@ -5,31 +5,9 @@
 
 - Two NIFI Clusters running in docker containers
 
+![NiFi Cluster](nifi-cluster.png)
 
-
-# Building NIFI Atlas Bridge
-
-`````
-git clone -b nifi-3709-2 https://github.com/ikethecoder/nifi.git
-
-docker pull maven:3.5.0-jdk-8
-
-docker run -v `pwd`/nifi:/source -w="/source" maven:3.5.0-jdk-8  mvn -DskipTests install
-`````
-
-Be patient, it will take about 15 minutes to run.
-
-
-# Building the multi-site NIFI cluster pair
-
-`````
-git clone https://github.com/ikethecoder/nifi-atlas.git
-
-# Copy over the newly built .nar files for: nifi-atlas-nar AND nifi-hive-nar
-cp ./nifi/nifi-nar-bundles/nifi-atlas-bundle/nifi-atlas-nar/target/nifi-atlas-nar-1.4.0-SNAPSHOT.nar ./nifi-atlas/nifi-cluster-docker/.
-cp ./nifi/nifi-nar-bundles/nifi-hive-bundle/nifi-hive-nar/target/nifi-hive-nar-1.4.0-SNAPSHOT.nar ./nifi-atlas/nifi-cluster-docker/.
-
-`````
+# Building the NiFi Multi-site clusters
 
 Set DOCKER_HOSTADDR to the IP address of the host that will be running the NIFI clusters.  Needed for Site to Site.
 
@@ -41,7 +19,7 @@ Set HADOOP_ADDR to the location of the HDFS environment (can be a hostname or IP
 
 Use docker-compose to build the containers for the two sites:
 
-    cd nifi-atlas/nifi-cluster-docker
+    cd nifi-cluster-docker
 
     docker-compose -f docker-compose-site-a.yml -p nificluster_a build
 
