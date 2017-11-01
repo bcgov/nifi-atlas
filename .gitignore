@@ -24,6 +24,6 @@ hs_err_pid*
 
 .idea/
 
-*/target/
+**/target/
 
 */nifi-data/
