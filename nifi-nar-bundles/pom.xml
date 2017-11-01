@@ -27,8 +27,11 @@
         <module>nifi-framework-bundle</module>
         <module>nifi-extension-utils</module>
         <module>nifi-atlas-bundle</module>
-  </modules>
+    </modules>
 
+    <properties>
+        <atlas.version>0.8.1</atlas.version>
+    </properties>
     <build>
         <plugins>
             <!-- Makes buildRevision and buildBranch available to the NAR Plugin so they can be populated in the MANIFEST -->
