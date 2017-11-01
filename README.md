@@ -3,28 +3,15 @@ A bridge to Apache Atlas for provenance metadata created from  data transformati
 
 ## Getting Started
 
-1. Get your local maven repository populated with all the dependent JAR files related to NiFi ver. 1.4.0
+1. Get your local maven repository populated with all the dependent JAR files related to NiFi ver. 1.5.0-SNAPSHOT
 
 ```
 git clone https://github.com/apache/nifi.git
 
 cd nifi
 
-git checkout tags/rel/nifi-1.4.0
-
 mvn install -DskipTests=true
 ```
-
-There are also two projects that were part of NiFi, which we need to include:
-
-- nifi-nar-bundles/nifi-framework-bundle/nifi-client-dto
-- nifi-nar-bundles/nifi-extension-utils/nifi-reporting-utils
-
-
-```
-git clone https://github.com/apache/nifi.git
-```
-
 
 Be patient, it will take about 15 minutes to run.
 
@@ -52,7 +39,7 @@ The reminder of the setup can be followed in the [nifi-cluster-docker README](ni
 
 • Java 8
 • Apache Atlas 0.8+
-• Apache NiFi 1.4+
+• Apache NiFi 1.5+
 • Apache Kafka 0.10+
 
 ### How to Contribute
