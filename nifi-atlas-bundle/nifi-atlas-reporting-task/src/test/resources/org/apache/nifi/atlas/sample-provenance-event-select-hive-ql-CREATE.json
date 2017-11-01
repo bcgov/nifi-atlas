@@ -1,0 +1,45 @@
+{
+  "eventTime" : 1507043248403,
+  "eventType" : "CREATE",
+  "lineageStartDate" : 1507043248399,
+  "componentId" : "ddfe4fab-015e-1000-c0ad-aa3934923a49",
+  "componentType" : "SelectHiveQL",
+  "transitUri" : null,
+  "sourceSystemFlowFileIdentifier" : null,
+  "parentUuids" : [ ],
+  "alternateIdentifierUri" : null,
+  "details" : null,
+  "relationship" : null,
+  "storageByteOffset" : 4696,
+  "storageFilename" : "1626.prov.gz",
+  "eventDuration" : -1,
+  "contentClaimSection" : null,
+  "contentClaimContainer" : null,
+  "contentClaimIdentifier" : null,
+  "contentClaimOffset" : null,
+  "sourceQueueIdentifier" : null,
+  "previousAttributes" : {
+  },
+  "updatedAttributes" : {
+    "path" : "./",
+    "uuid" : "33b7fdbc-4912-4551-b9d6-753b3c9c4a16",
+    "filename" : "144504411602262"
+  },
+  "eventId" : 1626,
+  "attributes" : {
+    "path" : "./",
+    "uuid" : "33b7fdbc-4912-4551-b9d6-753b3c9c4a16",
+    "filename" : "144504411602262"
+  },
+  "flowFileEntryDate" : 1507043248399,
+  "fileSize" : 0,
+  "previousFileSize" : null,
+  "previousContentClaimSection" : null,
+  "previousContentClaimContainer" : null,
+  "previousContentClaimIdentifier" : null,
+  "previousContentClaimOffset" : null,
+  "bestEventIdentifier" : "1626",
+  "flowFileUuid" : "33b7fdbc-4912-4551-b9d6-753b3c9c4a16",
+  "childUuids" : [ ],
+  "remotePortType" : false
+}

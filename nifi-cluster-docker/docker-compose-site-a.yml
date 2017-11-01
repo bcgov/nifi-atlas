@@ -1,0 +1,75 @@
+version: '3.2'
+volumes:
+  nifi-data:
+
+services:
+  zoo1:
+    image: zookeeper
+    restart: always
+    ports:
+      - 2181
+    environment:
+      ZOO_MY_ID: 1
+      ZOO_SERVERS: server.1=zoo1:2888:3888
+
+  nifi-node-1:
+    build: ./nifi-node
+    image: nifi-node:1.0.0
+    depends_on:
+      - zoo1
+    ports:
+      - "5181:5181"
+    environment:
+      - EXCLUDE_PORTS=5181,8082
+      # Used by ListenTCP or other processors. Depends on the data flow.
+      - TCP_PORTS=9001
+      - S2S_HOSTNAME=${DOCKER_HOSTADDR}
+      - S2S_PORT=5181
+    volumes:
+       - type: bind
+         source: ./nifi-data/a/1
+         target: /var/data
+       - type: bind
+         source: ./nifi-data/a/files
+         target: /var/files
+    extra_hosts:
+       - "hadoop.demo:${HADOOP_ADDR}"
+       - "kafka.demo:${HADOOP_ADDR}"
+       - "nifi.demo:${DOCKER_HOSTADDR}"
+
+  nifi-node-2:
+    build: ./nifi-node
+    image: nifi-node:1.0.0
+    depends_on:
+      - zoo1
+    ports:
+      - "5281:5281"
+    environment:
+      - EXCLUDE_PORTS=5281,8082
+      # Used by ListenTCP or other processors. Depends on the data flow.
+      - TCP_PORTS=9001
+      - S2S_HOSTNAME=${DOCKER_HOSTADDR}
+      - S2S_PORT=5281
+    volumes:
+       - type: bind
+         source: ./nifi-data/a/2
+         target: /var/data
+       - type: bind
+         source: ./nifi-data/a/files
+         target: /var/files
+    extra_hosts:
+       - "hadoop.demo:${HADOOP_ADDR}"
+       - "kafka.demo:${HADOOP_ADDR}"
+       - "nifi.demo:${DOCKER_HOSTADDR}"
+
+  lb:
+    image: dockercloud/haproxy
+    links:
+      - nifi-node-1
+      - nifi-node-2
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "5080:80"
+      - "5001:9001"
+

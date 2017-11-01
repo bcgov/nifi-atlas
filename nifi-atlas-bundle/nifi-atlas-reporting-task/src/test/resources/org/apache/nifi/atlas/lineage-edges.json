@@ -1,0 +1,169 @@
+[ {
+  "uuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+  "source" : {
+    "eventIdentifier" : 318,
+    "identifier" : "318",
+    "timestamp" : 1507770076665,
+    "nodeType" : "PROVENANCE_EVENT_NODE",
+    "flowFileUuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+    "eventType" : "SEND",
+    "childUuids" : [ ],
+    "parentUuids" : [ ]
+  },
+  "destination" : {
+    "eventIdentifier" : 319,
+    "identifier" : "319",
+    "timestamp" : 1507770076666,
+    "nodeType" : "PROVENANCE_EVENT_NODE",
+    "flowFileUuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+    "eventType" : "DROP",
+    "childUuids" : [ ],
+    "parentUuids" : [ ]
+  }
+}, {
+  "uuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+  "source" : {
+    "eventIdentifier" : 309,
+    "identifier" : "309",
+    "timestamp" : 1507770076616,
+    "nodeType" : "PROVENANCE_EVENT_NODE",
+    "flowFileUuid" : "691da351-ab09-4d98-ab76-72d1e4ecc638",
+    "eventType" : "CLONE",
+    "childUuids" : [ "52260083-603e-41d8-82ae-7f65650ff1f1" ],
+    "parentUuids" : [ "691da351-ab09-4d98-ab76-72d1e4ecc638" ]
+  },
+  "destination" : {
+    "flowFileUuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+    "identifier" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+    "timestamp" : 1507770076616,
+    "nodeType" : "FLOWFILE_NODE"
+  }
+}, {
+  "uuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+  "source" : {
+    "flowFileUuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+    "identifier" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+    "timestamp" : 1507770076616,
+    "nodeType" : "FLOWFILE_NODE"
+  },
+  "destination" : {
+    "eventIdentifier" : 310,
+    "identifier" : "310",
+    "timestamp" : 1507770076616,
+    "nodeType" : "PROVENANCE_EVENT_NODE",
+    "flowFileUuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+    "eventType" : "ATTRIBUTES_MODIFIED",
+    "childUuids" : [ ],
+    "parentUuids" : [ ]
+  }
+}, {
+  "uuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+  "source" : {
+    "eventIdentifier" : 313,
+    "identifier" : "313",
+    "timestamp" : 1507770076629,
+    "nodeType" : "PROVENANCE_EVENT_NODE",
+    "flowFileUuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+    "eventType" : "CONTENT_MODIFIED",
+    "childUuids" : [ ],
+    "parentUuids" : [ ]
+  },
+  "destination" : {
+    "eventIdentifier" : 316,
+    "identifier" : "316",
+    "timestamp" : 1507770076645,
+    "nodeType" : "PROVENANCE_EVENT_NODE",
+    "flowFileUuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+    "eventType" : "CONTENT_MODIFIED",
+    "childUuids" : [ ],
+    "parentUuids" : [ ]
+  }
+}, {
+  "uuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+  "source" : {
+    "eventIdentifier" : 316,
+    "identifier" : "316",
+    "timestamp" : 1507770076645,
+    "nodeType" : "PROVENANCE_EVENT_NODE",
+    "flowFileUuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+    "eventType" : "CONTENT_MODIFIED",
+    "childUuids" : [ ],
+    "parentUuids" : [ ]
+  },
+  "destination" : {
+    "eventIdentifier" : 317,
+    "identifier" : "317",
+    "timestamp" : 1507770076657,
+    "nodeType" : "PROVENANCE_EVENT_NODE",
+    "flowFileUuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+    "eventType" : "ATTRIBUTES_MODIFIED",
+    "childUuids" : [ ],
+    "parentUuids" : [ ]
+  }
+}, {
+  "uuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+  "source" : {
+    "eventIdentifier" : 317,
+    "identifier" : "317",
+    "timestamp" : 1507770076657,
+    "nodeType" : "PROVENANCE_EVENT_NODE",
+    "flowFileUuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+    "eventType" : "ATTRIBUTES_MODIFIED",
+    "childUuids" : [ ],
+    "parentUuids" : [ ]
+  },
+  "destination" : {
+    "eventIdentifier" : 318,
+    "identifier" : "318",
+    "timestamp" : 1507770076665,
+    "nodeType" : "PROVENANCE_EVENT_NODE",
+    "flowFileUuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+    "eventType" : "SEND",
+    "childUuids" : [ ],
+    "parentUuids" : [ ]
+  }
+}, {
+  "uuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+  "source" : {
+    "eventIdentifier" : 312,
+    "identifier" : "312",
+    "timestamp" : 1507770076625,
+    "nodeType" : "PROVENANCE_EVENT_NODE",
+    "flowFileUuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+    "eventType" : "CLONE",
+    "childUuids" : [ "25942f9e-4017-44af-9a4d-5450cdadca95" ],
+    "parentUuids" : [ "52260083-603e-41d8-82ae-7f65650ff1f1" ]
+  },
+  "destination" : {
+    "eventIdentifier" : 313,
+    "identifier" : "313",
+    "timestamp" : 1507770076629,
+    "nodeType" : "PROVENANCE_EVENT_NODE",
+    "flowFileUuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+    "eventType" : "CONTENT_MODIFIED",
+    "childUuids" : [ ],
+    "parentUuids" : [ ]
+  }
+}, {
+  "uuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+  "source" : {
+    "eventIdentifier" : 310,
+    "identifier" : "310",
+    "timestamp" : 1507770076616,
+    "nodeType" : "PROVENANCE_EVENT_NODE",
+    "flowFileUuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+    "eventType" : "ATTRIBUTES_MODIFIED",
+    "childUuids" : [ ],
+    "parentUuids" : [ ]
+  },
+  "destination" : {
+    "eventIdentifier" : 312,
+    "identifier" : "312",
+    "timestamp" : 1507770076625,
+    "nodeType" : "PROVENANCE_EVENT_NODE",
+    "flowFileUuid" : "52260083-603e-41d8-82ae-7f65650ff1f1",
+    "eventType" : "CLONE",
+    "childUuids" : [ "25942f9e-4017-44af-9a4d-5450cdadca95" ],
+    "parentUuids" : [ "52260083-603e-41d8-82ae-7f65650ff1f1" ]
+  }
+} ]
