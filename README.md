@@ -1,3 +1,6 @@
+[![img](https://img.shields.io/badge/Lifecycle-Retired-d45500)](https://github.com/bcgov/repomountie/blob/master/doc/lifecycle-badges.md) - ```[![img](https://img.shields.io/badge/Lifecycle-Retired-d45500)](https://github.com/bcgov/repomountie/blob/master/doc/lifecycle-badges.md)```\
+The project is no longer being used and/or supported.
+
 # nifi-atlas
 A bridge to Apache Atlas for provenance metadata created from  data transformations completed by Apache NiFi .
 
