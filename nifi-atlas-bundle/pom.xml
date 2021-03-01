@@ -32,7 +32,7 @@
     </modules>
 
     <properties>
-        <atlas.version>0.8.1</atlas.version>
+        <atlas.version>2.0.0</atlas.version>
     </properties>
 
     <dependencyManagement>
